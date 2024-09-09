@@ -34,3 +34,8 @@ jobs:
         fi
         echo "Build successful!"
 
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: qrcode_generator_reader
+        path: ./qrcode_generator_reader
