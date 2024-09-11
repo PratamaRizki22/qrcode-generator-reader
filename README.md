@@ -1,3 +1,5 @@
+![alt text](image.png) 
+[git flow from web atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 # QR Code Generator and Reader
 
 This is a simple Go application that allows you to create and read QR codes in your terminal. The application provides options to generate QR codes in different formats (PNG, JPG, SVG) and to read QR codes from files. You can also visualize the QR code directly in the terminal in ASCII format.
