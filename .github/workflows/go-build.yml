@@ -9,10 +9,10 @@ jobs:
   restrict_merge:
     runs-on: ubuntu-latest
     steps:
-    - name: Check if the PR is from release branch
+    - name: Check if the PR is from release or hotfix branch
       run: |
-        if [[ "${{ github.head_ref }}" != release/* ]]; then
-          echo "Pull request can only be merged from release branch."
+        if [[ "${{ github.head_ref }}" != "release" && "${{ github.head_ref }}" != "hotfix" ]]; then
+          echo "Pull request can only be merged from release or hotfix branch."
           exit 1
         fi
 
